@@ -1,0 +1,105 @@
+<html>
+<head>
+<script src="jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="theme.css">
+<script src="main.js"></script>
+</head>
+
+<div id="banner">
+</div>
+
+<div id="cssmenu">
+<ul>
+   <li class="active"><a href="#"><span>Blog</span></a></li>
+   <!-- <li><a href="#"><span>Blog</span></a></li> -->
+   <li><a href="#"><span>About us</span></a></li>
+   <li><a href="#"><span>Sponsors</span></a></li>
+   <li><a href="#"><span>Outreach</span></a></li>
+   <li><a href="#"><span>Resources</span></a></li>
+   <li><a href="#"><span>Contact us</span></a></li>
+   <li class="last"><a href="#"><span>Store</span></a></li>
+</ul>
+</div>
+
+<div id="mainpage">
+  <head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-animate){display:none !important;}ng\:form{display:block;}</style>
+		<title>Burlingame Robotics | Iron Panthers Team 5026 </title>
+		<meta name="description" content="The Official Burlingame High School FIRST Robotics Website | Iron Panthers FRC 5026 FTC 7316">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script src="scripts/angular.min.js"></script>
+		<script src="scripts/angular-route.min.js"></script>
+		<script src="scripts/angular-sanitize.min.js"></script>
+		<script src="scripts/main.js"></script>
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<!-- SnapWidget -->
+			<div id="sidebar">
+				<iframe src="http://snapwidget.com/bd/?u=aXJvbnBhbnRoZXJzfGlufDIyNXwxfDF8fHllc3wyMHxub25lfG9uU3RhcnR8eWVz&amp;v=4814" title="Instagram Widget" allowtransparency="true" scrolling="no" style="width:auto; height:372px" frameborder="0"></iframe>
+				<a href="http://facebook.com/ironpanthers"><img src="imgs/facebook.svg"></a>
+				<a href="http://twitter.com/IronPanthers"><img src="imgs/twitter.svg"></a>
+				<a href="https://www.youtube.com/channel/UCtumX6DGAKybCU7G5BuKyEQ"><img src="imgs/youtube.svg"></a>
+			</div>
+			<main class="ng-scope" id="blogs" ng-controller="BlogController" role="main">
+				<!-- This div changes based on the URL or what the user has clicked. -->
+				<!-- ngView:  --><div ng-view="" class="posts ng-scope"><!-- ngRepeat: blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs --><div class="postEntry ng-scope" ng-repeat="blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs">
+	<article>
+		<header>
+			<span><time class="ng-binding" x-iso-time="2015-04-29T08:00:00.000Z">April 29, 2015</time></span>
+			<h1 class="ng-binding">The Iron Panthers at the Sacramento and Silicon Valley Regionals</h1>
+		</header>
+        <img class="" src="imgs/frcsvr0.jpg" ng-show="isMostRecent(blog.index)" ng-src="imgs/frcsvr0.jpg">
+		<p class="ng-binding" id="postPreview">From Thursday, April 2nd to Saturday, April 4th, the Burlingame Iron Panthers competed in our second competition at the FRC Silicon Valley Regional. We, along with 57 other teams, took part in the challenge called Recycle Rush, where robots of all different designs stacked recycling totes and containers for points. After some additions to the robot, our team was very successful at the competition,...</p><a href="#!/posts/0">Read more</a>
+	</article>
+</div><!-- end ngRepeat: blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs --><div class="postEntry ng-scope" ng-repeat="blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs">
+	<article>
+		<header>
+			<span><time class="ng-binding" x-iso-time="2015-03-05T08:00:00.000Z">March 5, 2015</time></span>
+			<h1 class="ng-binding">Presentation, dinner, and more at our Bag and Tag Dinner 2015!</h1>
+		</header>
+        <img class="ng-hide" src="imgs/frcbagandtag2015invitation.png" ng-show="isMostRecent(blog.index)" ng-src="imgs/frcbagandtag2015invitation.png">
+		<p class="ng-binding" id="postPreview">Tomorrow is our Bag and Tag Fundraising Dinner!!!! Come on by for good food and to see our robot. We will be having a silent auction with items donated to us from local businesses including Gap, David...</p><a href="#!/posts/1">Read more</a>
+	</article>
+</div><!-- end ngRepeat: blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs --><div class="postEntry ng-scope" ng-repeat="blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs">
+	<article>
+		<header>
+			<span><time class="ng-binding" x-iso-time="2015-02-09T08:00:00.000Z">February 9, 2015</time></span>
+			<h1 class="ng-binding">Students from team complete in local hackathon HSHacks</h1>
+		</header>
+        <img class="ng-hide" src="imgs/hackathon.jpg" ng-show="isMostRecent(blog.index)" ng-src="imgs/hackathon.jpg">
+		<p class="ng-binding" id="postPreview">At the PayPal headquarters in San Jose, programmers Max C, Leon Cheung, Peter Skidmore, and Austin Soohoo worked through the night to complete the project they call Gyst....</p><a href="#!/posts/2">Read more</a>
+	</article>
+</div><!-- end ngRepeat: blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs --><div class="postEntry ng-scope" ng-repeat="blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs">
+	<article>
+		<header>
+			<span><time class="ng-binding" x-iso-time="2015-01-04T08:00:00.000Z">January 4, 2015</time></span>
+			<h1 class="ng-binding">Recycle Rush Kickoff at Woodside High School</h1>
+		</header>
+        <img class="ng-hide" src="imgs/frcrrkickoff0.jpg" ng-show="isMostRecent(blog.index)" ng-src="imgs/frcrrkickoff0.jpg">
+		<p class="ng-binding" id="postPreview">As the rest of the world slept beneath a dense blanket of Bay Area fog, the Iron Panthers abandoned their warm beds to go to Woodside High School for the 2015 FRC Season Kickoff. The robotics communit...</p><a href="#!/posts/3">Read more</a>
+	</article>
+</div><!-- end ngRepeat: blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs --><div class="postEntry ng-scope" ng-repeat="blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs">
+	<article>
+		<header>
+			<span><time class="ng-binding" x-iso-time="2014-12-13T08:00:00.000Z">December 13, 2014</time></span>
+			<h1 class="ng-binding">The Iron Panthers Wins Two FTC Awards</h1>
+		</header>
+        <img class="ng-hide" src="imgs/ftcaward2.jpg" ng-show="isMostRecent(blog.index)" ng-src="imgs/ftcaward2.jpg">
+		<p class="ng-binding" id="postPreview">The Iron Panthers have been busy designing robots for the FTC 2014 season, where the main objectives revolve around scoring wiffle-balls into tall, mobile, and cylindrical goals. Although our robot wa...</p><a href="#!/posts/4">Read more</a>
+	</article>
+</div><!-- end ngRepeat: blog in blogs | startFrom: currentPage * maxBlogs | limitTo: maxBlogs -->
+<!-- Next/previous buttons -->
+<button disabled="disabled" class="ng-scope" ng-disabled="currentPage == 0" ng-click="currentPage = currentPage - 1;">Previous</button><span class="ng-binding ng-scope">
+1 / 3
+</span><button class="ng-scope" ng-disabled="currentPage >= blogs.length / maxBlogs - 1" ng-click="currentPage = currentPage + 1;">Next</button></div>
+			</main>
+		</div>
+		<div id="footer"><a href="https://github.com/fsxfreak/iron-panthers-web">Site created by Stanley Kwong and Leon Cheung. Maintained by Auriga. Copyright © 2015.</a></div>
+
+	<script type="text/javascript">randomizeImage()</script>
+</body>
+</div>
